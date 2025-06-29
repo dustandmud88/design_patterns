@@ -1,6 +1,8 @@
 import json
 import os.path
 
+BOOK_PATH = "books.json"
+
 
 class Book:
 
@@ -45,8 +47,8 @@ in a separate class called PersistentManager and not inside the Book class
 
 book2 = Book("2", "Mastering Python Design Patterns",
              " Kamon Ayeva y Sakis Kasampalis", "31.19")
-PersistentManager.save_object_to_json_file("books.json", book2)
+PersistentManager.save_object_to_json_file(BOOK_PATH, book2)
 
 book1 = Book("1", "Sumérgete en los patrones de diseño",
              "Alexander Shvets", "30")
-PersistentManager.save_object_to_json_file("books.json", book1)
+PersistentManager.save_object_to_json_file(BOOK_PATH, book1)
