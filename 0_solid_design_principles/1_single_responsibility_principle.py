@@ -34,15 +34,15 @@ class PersistentManager:
 
 
 """
-According to single responsibility principle we don't overload objects
-with too many responsibilities. In this way we avoid:
-- Classes become too large: reduce complexity
-- Modifying code in many places if fix is needed because functionality
-is isolated and so, change will not impact other parts of code just one part:
- easier to maintain
-
-In this example the persistence of book object functionality is stored 
-in a separate class called PersistentManager and not inside the Book class
+    According to single responsibility principle we don't overload objects
+    with too many responsibilities. In this way we avoid:
+    - Classes become too large: reduce complexity
+    - Modifying code in many places if fix is needed because functionality
+    is isolated and so, change will not impact other parts of code just one part:
+     easier to maintain
+    
+    In this example the persistence of book object functionality is stored 
+    in a separate class called PersistentManager and not inside the Book class
 """
 
 book2 = Book("2", "Mastering Python Design Patterns",
