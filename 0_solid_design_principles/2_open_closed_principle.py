@@ -27,7 +27,7 @@
 from abc import ABC, abstractmethod
 
 
-class DiscountStrategy(ABC):
+class DiscountStrategy(A1BC):
     @abstractmethod
     def calculate_discount(self):
         pass
